@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Warna latar belakang yang lembut */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto; /* Menambahkan margin atas untuk jarak dari atas */
+    background: white;
+    padding: 30px; /* Menambahkan padding untuk ruang di dalam */
+    border-radius: 10px; /* Membuat sudut lebih bulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold; /* Menebalkan label */
+    color: #555; /* Warna label yang lebih gelap */
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Efek transisi saat fokus */
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #007bff; /* Warna border saat fokus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c; /* Warna tombol */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Ukuran font tombol */
+}
+
+button:hover {
+    background-color: #4cae4c; /* Warna tombol saat hover */
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff; /* Warna link */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.result-box {
+    background-color: #e7f3fe; /* Warna latar belakang untuk hasil */
+    border: 1px solid #b3d7ff; /* Border untuk hasil */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.result-box h2 {
+    color: #31708f; /* Warna teks untuk hasil */
+}
+
+.back-button {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Warna tombol kembali */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Warna tombol kembali saat hover */
+}

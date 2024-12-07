@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result-box">
+            <p>Your prediction result is:</p>
+            <h2><strong>{{ prediction }}</strong></h2>
+            {% if prediction == "No Stress" %}
+                <p>Great news! You are not predicted to be experiencing stress.</p>
+            {% elif prediction == "Stress" %}
+                <p>It seems that you may be experiencing stress. Consider reaching out for support.</p>
+            {% else %}
+                <p>Please consult a professional for a more accurate assessment.</p>
+            {% endif %}
+        </div>
+        <a class="back-button" href="/">Go Back</a>
+    </div>
+</body>
+</html>
