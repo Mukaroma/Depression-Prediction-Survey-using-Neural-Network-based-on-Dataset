@@ -9,7 +9,7 @@ import numpy as np
 import joblib
 
 # Load dataset
-df = pd.read_csv('C:\\Coding\\All about Python\\LastPlease\\Depression Professional Dataset.csv')
+df = pd.read_csv('LastPlease/Depression Professional Dataset.csv')
 df = df.dropna()
 
 # Feature selection
